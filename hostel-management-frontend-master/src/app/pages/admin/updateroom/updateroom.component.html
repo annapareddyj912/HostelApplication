@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="card">
+        <form (ngSubmit)="doSubmitForm()">
+            <h1> Update room</h1>
+            &NonBreakingSpace;
+            
+            <mat-form-field class="field" appearance="outline">
+            <mat-label>Room  id</mat-label>
+                <input name="roomid" [(ngModel)]="data.room" matInput>
+            </mat-form-field>
+            &NonBreakingSpace;
+
+            <mat-form-field class="field" appearance="outline">
+            <mat-label>Student id</mat-label>
+                 <input name="studentid" [(ngModel)]="data.stud" matInput>
+            </mat-form-field>
+            &NonBreakingSpace;
+            
+            <mat-form-field class="field" appearance="outline">
+                <mat-label>Start Date</mat-label>
+                     <input name="startdate" [(ngModel)]="data.startdate" matInput>
+                </mat-form-field>
+                &NonBreakingSpace;
+
+                <mat-form-field class="field" appearance="outline">
+                    <mat-label>End Date</mat-label>
+                         <input name="enddate" [(ngModel)]="data.enddate" matInput>
+                    </mat-form-field>
+
+                    &NonBreakingSpace;
+
+            <div class="text-center">
+                &NonBreakingSpace;
+                <button type="submit" mat-raised-button color="primary">Update</button>
+                &NonBreakingSpace;
+                <button type="reset" mat-raised-button color="accent">Reset</button>
+                &NonBreakingSpace;
+            </div>
+            </form>
+            </div>
+            </div>

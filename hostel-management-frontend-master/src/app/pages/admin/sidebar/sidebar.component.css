@@ -1,0 +1,28 @@
+
+  
+.mat-icon
+{
+    color: rgb(6, 6, 6);
+    vertical-align: center;
+    margin-right: 2rem;
+  
+}
+  
+
+  .mat-nav-list
+  {
+      color: rgb(195, 36, 36);
+  }
+  
+  
+  .mat-list-item
+  {
+    color: rgb(79, 23, 23);
+    font-size: 0.8rem;
+    height: 44px !important;
+    margin-bottom: 4px;
+    border-radius: 5px;
+    margin: 0.8px;
+  }
+  
+ 

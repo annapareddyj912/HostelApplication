@@ -1,0 +1,33 @@
+<div class="container" style="overflow-x:auto;">
+    <table>
+      <thead>
+      <tr>
+        <th>ID</th>
+        <th>StudentId</th>
+        <th>requestTime</th>
+        <th>weightOfCloths</th>
+        <th>clothsDry</th>
+        <th>numberOfIronedCloths</th>
+        <th>Action</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let laundryReq of (pendingReqs$|async)">
+        <td><span>{{laundryReq.id}}</span></td>
+        <td><span>{{laundryReq.user.id}}</span></td>
+        <td><span>{{laundryReq.requestTime|date:"medium"}}</span></td>
+        <td><span>{{laundryReq.weightOfCloths}}</span></td>
+        <td><span>{{laundryReq.clothsDry}}</span></td>
+        <td><span>{{laundryReq.numberOfIronedCloths}}</span></td>
+        <td>
+          <button mat-raised-button (click)="updateLaundryReq(laundryReq)" class="mr10" color='primary'>Update</button>
+          <button mat-raised-button (click)="removeLaundryReq(laundryReq.id)" color='primary'>Remove</button>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+
+  
+  
+  

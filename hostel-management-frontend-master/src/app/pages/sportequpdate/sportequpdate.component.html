@@ -1,0 +1,45 @@
+<div class="bootstrap-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <mat-card>
+          <!-- <div class="container text-center">
+             <img src="../../../assets/iiitb_logo.png" alt="iiitb_logo">
+           </div> -->
+          <h1 class="text-center"> Update Equipment Data !!</h1>
+          <!-- {{user|json}} -->
+          <form (ngSubmit)="formUpdate()">
+            <!--Username field-->
+            <mat-form-field class="full-width" appearance="outline">
+              <mat-label>Equipment Id</mat-label>
+              <input required [(ngModel)]="data.equipmentId" name="userName" type="number" matInput
+                     placeholder="Enter here" />
+            </mat-form-field>
+
+            <!--Password field-->
+            <mat-form-field class="full-width" appearance="outline">
+              <mat-label>Equipment Name</mat-label>
+              <input required [(ngModel)]="data.equipmentName" name="equipmentname" type="text" matInput
+                     placeholder="Enter here" />
+            </mat-form-field>
+
+            <!--First Name field-->
+            <mat-form-field class="full-width" appearance="outline">
+              <mat-label>Quantity</mat-label>
+              <input required [(ngModel)]="data.quantity" name="firstName"  type="number"  matInput
+                     placeholder="Enter here">
+            </mat-form-field>
+
+
+            <div class="container text-center">
+              <button mat-raised-button color="primary">Update</button>
+              <button class="ml10" type="reset" mat-raised-button color="accent">
+                clear
+              </button>
+            </div>
+          </form>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+<div class="container" style="overflow-x:auto;">
+    <table>
+      <thead>
+      <tr>
+        <th>ID</th>
+        <th>StudentId</th>
+        <th>RejectionTime</th>
+        <th>weightOfCloths</th>
+        <th>clothsDry</th>
+        <th>numberOfIronedCloths</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let laundryReq of (rejectedReqs$|async)">
+        <td><span>{{laundryReq.id}}</span></td>
+        <td><span>{{laundryReq.user.id}}</span></td>
+        <td><span>{{laundryReq.rejectionTime|date:"medium"}}</span></td>
+        <td><span>{{laundryReq.weightOfCloths}}</span></td>
+        <td><span>{{laundryReq.clothsDry}}</span></td>
+        <td><span>{{laundryReq.numberOfIronedCloths}}</span></td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+
+  
+  
+  

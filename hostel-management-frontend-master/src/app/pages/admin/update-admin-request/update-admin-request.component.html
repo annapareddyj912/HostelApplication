@@ -1,0 +1,51 @@
+<div class="bootstrap-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <mat-card>
+                    <button type='button' mat-raised-button style="width:100%" class="mb20"> Update Request Form </button>
+                    <!-- '|' is a filter that formats data to json-->
+                     <!-- {{laundryRequest|json}} -->
+                    <form (ngSubmit)="formSubmit()" style="text-align: center; ">
+
+                        <!--id of the request-->
+                        <button mat-raised-button style="width:25%">request id :</button>
+                        <button mat-raised-button style="width:25%">{{id}}</button>
+
+                        <!--weightOfCloths field-->
+                        <br>
+                        <button type='button' mat-raised-button style="width:50%" class="mt20"> Enter Weight of cloths(kg) </button>
+                        <br>
+                        <input style="text-align: center;" class="ml20 mr20 mb20 mt20"
+                        [(ngModel)]="laundryRequest.weightOfCloths"
+                        type="number" min="0" name="weightOfCloths"
+                        required />
+                        <br>
+
+                        <!-- Dry cloths option -->
+                        <button type='button' mat-raised-button style="width:50%"> Do you want to dry clothes? </button>
+                        <br>
+                        <select name="clothsDry"  class="ml20 mr20 mb20 mt20"
+                        [(ngModel)]="laundryRequest.clothsDry" required>
+                            <option value="false">False</option>
+                            <option value="true">True</option>
+                        </select>
+                        <br>
+
+                        <!--numberOfIronedCloths field-->
+                        <button type='button' mat-raised-button style="width:50%"> number Of Ironed Cloths </button>
+                        <br>
+                        <input style="text-align: center;" class="ml20 mr20 mb20 mt20"
+                        [(ngModel)]="laundryRequest.numberOfIronedCloths"
+                        name="numberOfIronedCloths"
+                        type="number" min="0" required />
+
+                        <div class="container text-center">
+                            <button mat-raised-button color="primary" type="submit" style="width:25%">Update</button>
+                        </div>
+                    </form>
+                </mat-card>
+            </div>
+        </div>
+    </div>
+</div>

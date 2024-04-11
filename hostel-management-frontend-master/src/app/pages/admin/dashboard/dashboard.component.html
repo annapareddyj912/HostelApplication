@@ -1,0 +1,71 @@
+<h1 class="text-center mt10"> <b>Admin Dashboard</b></h1>
+
+
+<div class="bootstrap-wrapper">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-md-12">
+        <mat-card class="outer_card">
+          <h2 class="text-center mb20"> Features</h2>
+          <!-- <div class="col-md-4">
+          <app-sidebar></app-sidebar>
+        </div> -->
+          <div class="column">
+            <mat-card class="example-card ml30" routerLink = "/sportshome">
+              <mat-card-header routerLink = "/sportshome">
+                <mat-card-title>Sports Module</mat-card-title>
+              </mat-card-header>
+              <img mat-card-image src="../../../assets/sports_logo.jpg"
+                alt="Sports logo">
+              <mat-card-actions>
+                <button class="ml10" mat-raised-button>GO</button>
+              </mat-card-actions>
+            </mat-card>
+          </div>
+          <div class="column">
+            <mat-card class="example-card ml20" routerLink="/laundryhome">
+              <mat-card-header>
+                <mat-card-title>Laundry_Module</mat-card-title>
+              </mat-card-header>
+              <img mat-card-image src="../../../assets/laundry_logo.jpg"
+                alt="Photo of a Shiba Inu">
+              <mat-card-actions>
+                <button class="ml10" mat-raised-button>GO</button>
+              </mat-card-actions>
+            </mat-card>
+          </div>
+          <div class="column">
+            <mat-card class="example-card ml10" routerLink="/billinghome">
+              <mat-card-header>
+                <mat-card-title>Billing Module</mat-card-title>
+              </mat-card-header>
+              <img mat-card-image src="../../../assets/billing_logo.jpg"
+                alt="Photo of a Shiba Inu">
+              <mat-card-actions>
+                <button class="ml10" mat-raised-button>GO</button>
+              </mat-card-actions>
+            </mat-card>
+          </div>
+          <div class="column">
+            <mat-card class="example-card" routerLink="/studentinfo">
+              <mat-card-header>
+                <mat-card-title>Student_Info</mat-card-title>
+              </mat-card-header>
+              <img mat-card-image src="../../../assets/student_info_logo.jpg"
+                alt="Photo of a Shiba Inu">
+              <mat-card-actions>
+                <button class="ml10" mat-raised-button>GO</button>
+              </mat-card-actions>
+            </mat-card>
+          </div>
+
+
+          <!-- <div class="col-md-8">
+          <router-outlet></router-outlet>
+        </div> -->
+
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</div>

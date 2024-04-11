@@ -1,0 +1,46 @@
+<div class="container ml20 mr20 mb20 mt20 text-center">
+    <div class="card">
+        <form (ngSubmit)="doSubmitForm()">
+            <h1>Student Information</h1>
+            
+            <mat-form-field class="field" appearance="outline">
+            <mat-label>UserName</mat-label>
+                <input name="userName" [(ngModel)]="data.userName" matInput>
+            </mat-form-field>
+            
+            &NonBreakingSpace;
+            <mat-form-field class="field" appearance="outline">
+            <mat-label>FirstName</mat-label>
+                <input name="subject" [(ngModel)]="data.firstname" matInput>
+            </mat-form-field>
+            &NonBreakingSpace;
+
+            <mat-form-field class="field" appearance="outline">
+                <mat-label>LastName</mat-label>
+                    <input name="subject" [(ngModel)]="data.lastname" matInput>
+                </mat-form-field>
+                &NonBreakingSpace;
+
+            <mat-form-field class="field" appearance="outline">
+                <mat-label>Phone</mat-label>
+                    <input name="subject" [(ngModel)]="data.phone" matInput>
+                </mat-form-field>
+                &NonBreakingSpace;
+
+
+                <mat-form-field class="field" appearance="outline">
+                    <mat-label>Email</mat-label>
+                        <input name="subject" [(ngModel)]="data.email" matInput>
+                    </mat-form-field>
+                    &NonBreakingSpace;
+          
+            <div class="text-center">
+                <mat-spinner *ngIf="flag" style="margin:auto"></mat-spinner>
+                <button [disabled]="flag" type="submit" mat-raised-button color="primary">Add</button>
+                &NonBreakingSpace;
+                <button type="reset" mat-raised-button color="accent">Reset</button>
+            </div>
+        </form>
+        <!--{{data|json}}-->
+    </div>
+</div>

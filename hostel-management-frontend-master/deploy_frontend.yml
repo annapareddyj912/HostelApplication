@@ -1,0 +1,15 @@
+---
+- name: Pull a docker image from dockerhub and create a frontend container
+  hosts: all
+  tasks:
+    - name: Pull a image from dockerhub
+      docker_image:
+        name: bony211298/frontend_hostel
+        source: pull
+
+    - name: Create a container using docker image
+      docker_container:
+           name: frontend_angular_container
+           image: bony211298/frontend_hostel
+           ports:
+            - "4201:4201"

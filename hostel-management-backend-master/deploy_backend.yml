@@ -1,0 +1,15 @@
+---
+- name: Pull a backend docker image from dockerhub and create a container
+  hosts: all
+  tasks:
+    - name: Pull image from dockerhub
+      docker_image:
+        name: bony211298/hostel_backend
+        source: pull
+
+    - name: Create a container for backend
+      docker_container:
+           name: backend_springboot_container
+           image: bony211298/hostel_backend
+           ports:
+            - "8085:8085"

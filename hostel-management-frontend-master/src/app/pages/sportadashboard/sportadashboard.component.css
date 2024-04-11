@@ -1,0 +1,16 @@
+.mat-table{
+  width: 96%;
+  alignment: center;
+  align-content: center;
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+
+.bprimary{
+  background: #eb7b15;
+}
+
+.op{
+  text-align: center;
+  font-family: "M+ 1c heavy";
+}

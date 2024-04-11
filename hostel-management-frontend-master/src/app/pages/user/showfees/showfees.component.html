@@ -1,0 +1,35 @@
+
+
+ <div class="container" style="overflow-x:auto;">
+  <table>
+    <thead>
+    <tr>
+      <th>StudentId</th>
+      <th>Mess Fees</th>
+      <th>Hostel Fees</th>
+    
+    </tr>
+    </thead>
+    <tbody>
+      <td><span>{{fdata['id']}}</span></td>
+      <td><span>{{fdata['mess_fees']}}</span></td>
+      <td><span>{{fdata['hostel_fees']}}</span></td>
+     
+    </tbody>
+  </table>
+  </div>
+  &NonBreakingSpace;
+  &NonBreakingSpace;
+  &NonBreakingSpace;
+ 
+
+
+
+
+
+
+<form (ngSubmit)="doExportpdf()">
+  <div class="text-center">
+    <button  type="submit" mat-raised-button color="primary">Export to Pdf</button>
+ </div>
+</form>

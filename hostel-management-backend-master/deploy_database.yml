@@ -1,0 +1,15 @@
+---
+- name: Pull docker image of mysql database and create a container
+  hosts: all
+  tasks:
+    - name: Pull image of a mysql database
+      docker_image:
+        name: mysql
+        source: pull
+
+    - name: Create a mysql container
+      docker_container:
+           name: database_mysql_container
+           image: mysql
+           ports:
+            - "3307:3307"

@@ -1,0 +1,45 @@
+version: "2.4"
+services:
+  mysqldb-container:
+    image: mysql/mysql-server
+    container_name: mysqldb-container
+    ports:
+      - 3308:3306
+    volumes:
+      - "./admin.sql:/docker-entrypoint-initdb.d/1/admin.sql"
+    networks:
+      - my_net
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_DATABASE=hostel
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=password
+
+  backend:
+    image: bony211298/hostel_backend
+    container_name: backend
+    networks:
+      - my_net
+    environment:
+      - DATABASE_URL=jdbc:mysql://mysqldb-container:3306/hostel
+    ports:
+      - "8087:8087"
+    links:
+      - mysqldb-container
+    depends_on:
+      mysqldb-container:
+        condition: service_healthy
+
+  frontend:
+    image: bony211298/frontend_hostel
+    container_name: frontend
+    networks:
+      - my_net
+    ports:
+      - "4500:4200"
+    depends_on:
+      - backend
+
+
+networks:
+  my_net:

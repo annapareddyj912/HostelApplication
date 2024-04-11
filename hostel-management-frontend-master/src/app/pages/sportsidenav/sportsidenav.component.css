@@ -1,0 +1,28 @@
+.mat-icon{
+  color: white;
+  vertical-align: center;
+  margin-right: 1rem;
+}
+
+.mat-divider{
+  border-top-width: 2px;
+  border-color: hotpink;
+}
+
+.mat-list-item{
+  color: whitesmoke;
+  font-size: 0.8rem;
+  height: 44px !important;
+  margin-bottom: 4px;
+  border-radius: 5px;
+  margin: 0.8px;
+}
+
+.mt-2{
+  color: white;
+}
+
+
+
+
+

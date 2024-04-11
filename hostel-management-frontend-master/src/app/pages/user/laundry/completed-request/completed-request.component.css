@@ -1,0 +1,23 @@
+table {
+    border: 1px solid;
+    width: 100%;
+}
+  
+th {
+    height: 70px;
+    background-color: #04AA6D;
+    color: rgb(0, 0, 0);
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
+    font-size: 18px;
+}
+tr:hover {
+    background-color: coral;
+}
+td {
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    height: 50px;
+    vertical-align: bottom;
+    padding: 15px;
+}

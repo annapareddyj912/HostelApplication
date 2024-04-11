@@ -1,0 +1,41 @@
+.example-card {
+    max-width: 200px;
+    max-height: 200px;
+    transform: translateY(0);
+  }
+  
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+
+  .h1{
+    text-align: center;
+    font-family: "M+ 1c heavy";
+  }
+
+  .b
+  {
+    font-family: "M+ 1c heavy";
+  }
+
+  .outer_card{
+    min-height: 150%;
+    background-color: #eca899;
+  }
+
+  .full-height{
+      height:100%;
+  }
+
+  .column{
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+
+  .row{
+    margin: 0 -5px;
+    min-height: 300px;
+    width: auto;
+  }

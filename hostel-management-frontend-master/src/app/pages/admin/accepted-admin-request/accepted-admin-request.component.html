@@ -1,0 +1,34 @@
+<div class="container text-center" style="overflow-x:auto;">
+  <button mat-raised-button type="button">price of Drying cloths = {{pricesData.DryCloths}}</button>
+  <button mat-raised-button type="button" class="ml20">price of Washing 1 Kg of cloths = {{pricesData.PerKgCost}}</button>
+  <button mat-raised-button type="button" class="ml20">price of Ironing 1 cloth = {{pricesData.IroningCloth}}</button>
+
+    <table class="mt20">
+      <thead>
+      <tr>
+        <th>ID</th>
+        <th>StudentId</th>
+        <th>AcceptedTime</th>
+        <th>weightOfCloths</th>
+        <th>clothsDry</th>
+        <th>numberOfIronedCloths</th>
+        <th>Action</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let laundryReq of (acceptedReqs$|async)">
+        <td><span>{{laundryReq.id}}</span></td>
+        <td><span>{{laundryReq.user.id}}</span></td>
+        <td><span>{{laundryReq.acceptanceTime|date:"medium"}}</span></td>
+        <td><span>{{laundryReq.weightOfCloths}}</span></td>
+        <td><span>{{laundryReq.clothsDry}}</span></td>
+        <td><span>{{laundryReq.numberOfIronedCloths}}</span></td>
+        <td><button mat-raised-button (click)="completeLaundryReqbyId(laundryReq)" color='primary'>Complete</button></td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+
+  
+  
+  

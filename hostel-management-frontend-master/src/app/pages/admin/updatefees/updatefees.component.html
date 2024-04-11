@@ -1,0 +1,23 @@
+<div class="container text-center">
+    <div class="card">
+        <form (ngSubmit)="doSubmitForm()">
+            <h1> Update  Fees</h1>
+            
+            <mat-form-field class="field" appearance="outline">
+            <mat-label>Hostel fee</mat-label>
+                <input type="number" name="hostelfee" [(ngModel)]="data.hostelfee" matInput>
+            </mat-form-field>
+
+            <mat-form-field class="field" appearance="outline">
+            <mat-label>Mess fee</mat-label>
+                 <input type="number" name="messfee" [(ngModel)]="data.messfee" matInput>
+            </mat-form-field>
+
+
+            <div class="text-center">
+                <button type="submit" mat-raised-button color="primary">Set</button>
+                <button type="reset" mat-raised-button color="accent">Reset</button>
+            </div>
+            </form>
+            </div>
+            </div>
