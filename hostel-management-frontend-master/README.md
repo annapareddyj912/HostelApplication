@@ -26,5 +26,4 @@ The database layer is handled by MySQL database.
 The connection between backend and Database uses JPA persistence framework.  
 Authentication is implemented using JWT.  
 
-Github Repo for Backend:
-https://github.com/BRMehta/-hostel-management-system
+
