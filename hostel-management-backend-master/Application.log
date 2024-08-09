@@ -5938,3 +5938,31 @@ Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'hostel'
 2024-08-08 18:41:57:512 INFO  - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2024-08-08 18:41:57:512 INFO  - Initializing Servlet 'dispatcherServlet'
 2024-08-08 18:41:57:515 INFO  - Completed initialization in 2 ms
+2024-08-09 11:30:59:532 INFO  - Starting hostelPortalApplication2 using Java 21.0.2 on Jyothi with PID 29400 (C:\Users\annap\OneDrive\Desktop\techm_coe_project\HostelApplication\hostel-management-backend-master\target\classes started by annap in C:\Users\annap\OneDrive\Desktop\techm_coe_project\HostelApplication\hostel-management-backend-master)
+2024-08-09 11:30:59:554 INFO  - No active profile set, falling back to 1 default profile: "default"
+2024-08-09 11:31:01:717 INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-09 11:31:01:995 INFO  - Finished Spring Data repository scanning in 260 ms. Found 9 JPA repository interfaces.
+2024-08-09 11:31:03:946 INFO  - Tomcat initialized with port(s): 8087 (http)
+2024-08-09 11:31:03:980 INFO  - Initializing ProtocolHandler ["http-nio-8087"]
+2024-08-09 11:31:03:981 INFO  - Starting service [Tomcat]
+2024-08-09 11:31:03:983 INFO  - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2024-08-09 11:31:04:440 INFO  - Initializing Spring embedded WebApplicationContext
+2024-08-09 11:31:04:441 INFO  - Root WebApplicationContext: initialization completed in 4784 ms
+2024-08-09 11:31:05:010 INFO  - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-09 11:31:05:188 INFO  - HHH000412: Hibernate ORM core version 5.6.7.Final
+2024-08-09 11:31:05:603 INFO  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-08-09 11:31:05:843 INFO  - HikariPool-1 - Starting...
+2024-08-09 11:31:06:603 INFO  - HikariPool-1 - Start completed.
+2024-08-09 11:31:06:647 INFO  - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-08-09 11:31:08:611 INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-08-09 11:31:08:627 INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-09 11:31:10:287 WARN  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-09 11:31:11:119 INFO  - Will not secure any request
+2024-08-09 11:31:13:736 INFO  - Starting ProtocolHandler ["http-nio-8087"]
+2024-08-09 11:31:13:839 INFO  - Tomcat started on port(s): 8087 (http) with context path ''
+2024-08-09 11:31:13:868 INFO  - Started hostelPortalApplication2 in 15.159 seconds (JVM running for 17.694)
+2024-08-09 11:33:12:999 INFO  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-09 11:33:13:000 INFO  - Initializing Servlet 'dispatcherServlet'
+2024-08-09 11:33:13:002 INFO  - Completed initialization in 2 ms
+2024-08-09 12:38:35:018 WARN  - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=18m56s431ms674µs700ns).
+2024-08-09 12:46:25:154 WARN  - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m47s495ms656µs).
