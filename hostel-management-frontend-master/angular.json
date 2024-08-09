@@ -105,5 +105,8 @@
       }
     }
   },
-  "defaultProject": "hostelFrontend"
+  "defaultProject": "hostelFrontend",
+  "cli": {
+    "analytics": "ffeec3dd-2d26-45be-a7a1-e65cb4c24942"
+  }
 }
